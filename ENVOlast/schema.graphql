@@ -1,0 +1,7 @@
+type WBTCOFT_Transfer {
+  id: ID!
+  from: String!
+  to: String!
+  value: BigInt!
+}
+

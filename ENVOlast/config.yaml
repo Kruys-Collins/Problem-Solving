@@ -1,0 +1,14 @@
+# yaml-language-server: $schema=./node_modules/envio/evm.schema.json
+name: ENVOlast
+networks:
+- id: 8453
+  start_block: 0
+  contracts:
+  - name: WBTCOFT
+    address:
+    - 0x0555E30da8f98308EdB960aa94C0Db47230d2B9c
+    handler: src/EventHandlers.ts
+    events:
+    - event: Transfer(address indexed from, address indexed to, uint256 value)
+unordered_multichain_mode: true
+preload_handlers: true
